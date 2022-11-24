@@ -32,17 +32,6 @@ public class Regex {
 		   System.out.println("please tried us or United States or CALIFORNIA or California");
 	   }
 		
-		/*Pattern pattern = Pattern.compile("List1");
-		Matcher matcher = pattern.matcher(input);
-		boolean flag = matcher.find();
-		if(flag)
-		{
-			String string = input.replace(input, "united Kingdome America");
-		}
-		else {
-			System.out.println("invalid input");
-			System.out.println("please tried us or United States or CALIFORNIA or California");
-		}*/
 		
 	}
 	}
