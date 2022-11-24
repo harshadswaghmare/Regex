@@ -29,7 +29,7 @@ public class Regex {
 	   
 	   else {
 		   System.out.println("invalid input");
-		   System.out.println("please tried us or United States or CALIFORNIA or California");
+		   System.out.println("please try the following options"+"\nus or United States or CALIFORNIA or California");
 	   }
 		
 		
