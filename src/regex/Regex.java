@@ -9,7 +9,7 @@ public class Regex {
 	public static void main(String args[]) {
 		while (true) {
 
-			HashMap<String, String> map = new HashMap<>();
+			HashMap<String, String> map = new HashMap<String,String>();
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter the input value");
 			String input = sc.nextLine();
@@ -27,7 +27,7 @@ public class Regex {
 			else {
 				System.out.println("invalid input");
 				System.out.println(
-						"please try the following options" + "\nus or United States or CALIFORNIA or California");
+						"please try following options" + "\nus or United States or CALIFORNIA or California");
 			}
 
 		}
