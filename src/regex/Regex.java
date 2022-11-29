@@ -30,41 +30,46 @@ public class Regex1 {
 			else if (Pattern.matches(afg, input.trim())) {
 				String valueString = input.replaceAll(input, "Afghanistan");
 				System.out.println(valueString);
-				;
+				
 			}
 
 			else {
-				System.out.println("Enter Valid input");
+				System.out.println("");
+				System.out.println("Please enter valid input");
 				
-				while(true) {
 				int option;
 				try {
 					System.out.println("for which country you want to enter data");
-					System.out.println("1 .India" + "\n2.Us or California" + "\n3.Afganistan");
+					System.out.println("1.India" + "\n2.Us or California" + "\n3.Afganistan");
 					option = sc.nextInt();
 					switch (option) {
 					case 1:
-						System.out.println("Please enter ind or IND or INDIA for ");
+						System.out.println("Enter ind,IND,INDIA ");
 						break;
 					case 2:
-						System.out.println("Please enter us or california or US or CALIFORNIA for united state");
+						System.out.println("Enter us or california or US or CALIFORNIA ");
 						break;
 					case 3:
-						System.out.println(" Please enter AFG for Afganistan");
+						System.out.println("Enter AFG ");
 						break;
 					default:
 						System.out.println("invalid match");
-						break;
+
 					}
-				
 
 				} catch (Exception e) {
 					System.out.println("enter valid input");
-					break;
-				}
+					
 				}
 
 			}
 		}
 	}
 }
+
+
+
+
+
+
+
