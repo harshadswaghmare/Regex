@@ -1,5 +1,6 @@
 package Regex1;
 
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -13,7 +14,11 @@ public class Regex1 {
 			String input = sc.nextLine();
 			String forUS = "((?i)us|california)$";
 			String forIndia = "(?i)IND|india";
-			String afg = "(?i)AFG";
+			String forUK = "(?i)UK";
+			String forCameroon ="(?i)cameroon";
+			String forTrinidadTRO = "(?i)TrinidadTRO";
+			String forAfg = "(?i)AFG";
+			String forARG = "(?i)ARG";
 			// String country = "[^+0-9\n]+[^(?:\s+0-9)*]";
 			// String demo ="[a-zA-Z\s]|";
 
@@ -27,14 +32,31 @@ public class Regex1 {
 				System.out.println(valueString);
 			}
 
-			else if (Pattern.matches(afg, input.trim())) {
-				String valueString = input.replaceAll(input, "Afghanistan");
+			else if (Pattern.matches(forCameroon, input.trim())) {
+				String valueString = input.replaceAll(input, "Cameroon");
 				System.out.println(valueString);
-				
+			}
+			else if (Pattern.matches(forUK, input.trim())) {
+				String valueString = input.replaceAll(input, "United Kingdom");
+				System.out.println(valueString);
+			}
+			else if (Pattern.matches(forTrinidadTRO, input.trim())) {
+				String valueString = input.replaceAll(input, "Trinidad");
+				System.out.println(valueString);
 			}
 
-			else {
-				System.out.println("");
+			else if (Pattern.matches(forAfg, input.trim())) {
+				String valueString = input.replaceAll(input, "AFG");
+				System.out.println(valueString);
+			}
+			
+			else if (Pattern.matches(forARG, input.trim())) {
+				String valueString = input.replaceAll(input, "Argentina");
+				System.out.println(valueString);
+			}
+			
+        	else {
+				System.out.println("Null");
 				System.out.println("Please enter valid input");
 				
 				int option;
@@ -52,9 +74,8 @@ public class Regex1 {
 					case 3:
 						System.out.println("Enter AFG ");
 						break;
-					default:
-						System.out.println("invalid match");
-
+					
+					default : System.out.println("invalid match");
 					}
 
 				} catch (Exception e) {
@@ -66,10 +87,3 @@ public class Regex1 {
 		}
 	}
 }
-
-
-
-
-
-
-
